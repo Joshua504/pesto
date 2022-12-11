@@ -334,6 +334,7 @@ footer .subcontain4 .copyright{
         position: fixed;
         background: #444141;
         flex-direction: column;
+        width: 100%;
     }
     nav .menu{
         display: flex;
