@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .6s ease;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'PT Serif', serif; */
+}
+
+header{
+    background: url(./img/pexels-markus-spiske-94443.jpg);
+    background-size: cover;
+    padding: 7.1875em 0em;
+}
+/* ======nav/styling====== */
+nav{
+    position: fixed;
+    width: 100%;
+    top: -0.3125em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #71727a;
+    z-index: 1;
+    padding: 1em;
+}
+nav .menu{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+}
+nav .menu .hamburger{
+    display: none;
+    cursor: pointer;
+}
+nav .menu .hamburger .bar{
+    display: block;
+    background: #ffff;
+    width: 35px;
+    height: 3px;
+    margin: 10px auto;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+nav ul{
+    display: flex;
+    gap: 3em;
+    list-style: none;
+    align-items: center;
+}
+nav ul .navlink{
+    color: #ffff;
+    font-size: clamp(.9rem, 8vw, 1.2rem);
+    text-decoration: none;
+}
+nav ul li .navlink:focus{
+    color: #41a451;
+}
+nav ul .navlink:hover{
+    color: #41a451;
+}
+nav button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    font-size: .9rem;
+    padding: 0em 2em;
+    background: #ffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+nav button:hover{
+    color: #ffff;
+    background: #000;
+}
+/* ======banner text/styling====== */
+header .bgtexts{
+    text-align: center;
+    padding: 7.1875em 0;
+    color: #000;
+}
+header .bgtexts h1{
+    font-size: clamp(2rem, 8vw, 2.8125rem);
+    font-family: 'PT Serif', serif;
+}
+header .bgtexts p{
+    font-size: clamp(1.200rem, 8vw, 1.125rem);
+    margin-top: 2.1875em;
+}
+/* ======about us/styling====== */
+.booking{
+    padding: 7.1875em 0;
+    background: #f5f5f5;
+}
+.booking article{
+    margin: 0 6em;
+}
+.booking article section{
+    display: flex;
+    justify-content: space-between;
+}
+.booking article section div .banner{
+    padding: 0 3em 0 0.9375em;
+}
+.booking article section .abtext{
+    padding: 0 0.9375em;
+}
+.booking article section .abtext h3{
+    font-size: clamp(1.75rem, 8vw, 2.8125rem);
+    font-family: 'PT Serif', serif;
+}
+.booking article section .abtext .italic{
+    display: flex;
+    gap: 1em;
+    margin-top: 1.875em;
+}
+.booking article section .abtext .italic p{
+    font-size:clamp(1.375rem, 5vw, 1.625rem);
+    font-weight: lighter;
+    font-family: 'PT Serif', serif;
+}
+.booking article section .at, .pa{
+    font-size: 0.9375rem;
+    font-weight: lighter;
+    line-height: 1.9625em;
+}
+.booking article section .at{
+    margin-top: 1.875em;
+}
+.booking article section .pa{
+    margin-top: 0.9375em;
+}
+/* ======why people choose us====== */
+.subcontainer{
+    padding: 7.1875em 0;
+}
+.subcontainer .subcontain{
+    margin: 0 6em;
+    padding:0 0.9375em;
+}
+.subcontainer .subcontain div>h3{
+    font-size: clamp(1.75rem, 4vw, 2.8125rem);
+    font-family: 'PT Serif', serif;
+    line-height: 3.375em;
+    text-align: center;
+}
+.subcontainer .subcontain .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    padding-bottom: 5em;
+}
+.subcontainer .subcontain .content .subcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subcontainer .subcontain .content  img{
+    width: 60%;
+}
+.subcontainer .subcontain .content .resize{
+    width: 45%;
+}
+.subcontainer .subcontain .content .subcontent div>h4{
+    font-size: 1.625rem;
+    font-family: 'PT Serif', serif;
+    font-weight: lighter;
+    transition: .5s ease-in;
+}
+.subcontainer .subcontain .content .subcontent div>h4:hover{
+    color: #41a451;
+}
+.subcontainer .subcontain .content .subcontent span{
+    position: relative;
+    width: 10%;
+    height: 2vh;
+    background: #d0efd5;
+    border-radius: 50px;
+    transform: translateX(0) rotate(0deg);
+    transition: all 1000ms ease-in-out;
+    z-index: 3;
+}
+.subcontainer .subcontain .content .subcontent:hover span{
+    transform: translateX(-5em) rotate(-100deg);
+}
+.subcontainer .subcontain .content .subcontent div>p{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+/*======Testimonials=====*/
+.subcontain1{
+    padding: 8.4375em 0;
+    background-image: url(./img/pexels-mariana-kurnyk-1756061.jpg);
+    background-size: cover;
+}
+.subcontain1 .sub{
+    text-align: center;
+    padding: 0 15px;
+    margin: 0 6em;
+}
+.subcontain1 .sub div>h2{
+    font-size: clamp(1.75rem, 4vw, 2.8125rem);
+    font-family: 'PT Serif', serif;
+    line-height: 3.375em;
+}
+.subcontain1 .sub section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subcontain1 .sub section>:nth-child(2){
+    display: none;
+}
+.subcontain1 .sub section>:nth-child(3){
+    display: none;
+}
+.subcontain1 .sub section>:nth-child(4){
+    display: none;
+}
+.subcontain1 .sub section p{
+    font-size: clamp(1.015rem, 4vw, 1.125rem);
+    line-height: 1.875em;
+}
+.subcontain1 .sub section h4{
+    font-size: 1.125rem;
+    line-height: 1.125em;
+    margin-top: 1.25em;
+}
+.subcontain1 .sub div span img{
+    margin-top: 5em;
+    border-radius: 15em;
+    cursor: pointer;
+}
+/* ======Awards/styling====== */
+.subcontain2{
+    padding: 7.1875em 0;
+    text-align: center;
+}
+.subcontain2 .sub1{
+    padding: 0 15px;
+    margin: 0 6em;
+}
+.subcontain2 .sub1 div h2{
+    font-size: clamp(1.75rem, 4vw, 2.8125rem);
+    font-family: 'PT Serif', serif;
+    line-height: 3.375em;
+}
+.subcontain2 .sub1 .subcontent2{
+    flex-wrap: wrap;
+}
+.subcontain2 .sub1 .subcontent2 img{
+    padding-right: .5em;
+}
+/* =========footer/styling========== */
+footer{
+    padding: 7.5em 0 6.875em;
+    background: #323232;
+}
+footer .subcontain4{
+    padding: 0 0.9375em;
+    margin:0 7.1875em ;
+}
+footer .subcontain4 .flogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .subcontain4 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 3.875em 0 ;
+}
+footer .subcontain4 ul li{
+    padding: 0 1.25em;
+    border-right: 1px solid #f5f5f5;
+}
+footer .subcontain4 ul>:nth-child(5){
+    border: none;
+}
+footer .subcontain4 ul li a{
+    color: #ffff;
+    font-weight: lighter;
+}
+footer .subcontain4 .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .subcontain4 .socials div{
+    padding: 0 1.125em;
+}
+footer .subcontain4 .socials div a{
+    color: #ffff;
+    font-size: 1.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .subcontain4 .socials div i{
+    padding: .625em;
+    border-radius: 50em;
+    background: #3C3C3C;
+}
+footer .subcontain4 .socials div i:hover{
+    background: #34c74a;
+}
+footer .subcontain4 .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    font-size: 0.875rem;
+    font-weight: lighter;
+    margin-top: 6.25em;
+}
+/* ========Screen changes========== */
+@media (width <= 767px){
+    /* ======nav bar====== */
+    nav{
+        position: fixed;
+        background: #444141;
+        flex-direction: column;
+    }
+    nav .menu{
+        display: flex;
+    }
+    nav .menu .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(12.5px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-12.5px) rotate(-45deg);
+    }
+    .navmenu{
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        gap: .8em;
+        background: #444141;
+        padding: 2em 0 2.0625em;
+        flex-direction: column;
+        transition: .5s ease-in-out;
+    }
+    nav button{
+        position: fixed;
+        top: 1%;
+        left: 64%;
+        padding: 0em 1.5em;
+    }
+    .navmenu.active{
+        left: 0;
+    }
+    /* ======banner text====== */
+    header{
+        padding: 2.1875em 0em;
+    }
+    header .bgtexts{
+        padding: 2.1875em 0 5em;
+    }
+    header .bgtexts h1{
+        margin-top: 2em;
+    }
+    header .bgtexts span::after{
+        width: 15%;
+    }
+    /* ======article====== */
+    .booking{
+        padding: 3.125em 0;
+    }
+    .booking article{
+        margin: 0 0.9375em;
+    }
+    .booking article section{
+        flex-direction: column;
+    }
+    .booking article section div .banner{
+        padding: 0 15px;
+        width: 100%;
+    }
+    .booking article section .abtext{
+        padding: 0;
+    }
+    /* ======why people choose us====== */
+    .subcontainer{
+        padding: 3.125em 0;
+    }
+    .subcontainer .subcontain{
+        margin: 0 0.9375em;
+        padding: 0;
+    }
+    .subcontainer .subcontain .content{
+        flex-direction: column;
+    }
+    .subcontainer .subcontain .content .subcontent{
+        flex-direction: column;
+        text-align: center;
+    }
+    .subcontainer .subcontain .content  img{
+        width: 20%;
+    }
+    .subcontainer .subcontain .content .resize{
+        width: 20%;
+    }
+    .subcontainer .subcontain .content .subcontent:hover span{
+        transform: translateY(-5em) rotate(-100deg);
+    }
+    /* =======Testimonials======= */
+    .subcontain1{
+        padding: 3.125em 0;
+    }
+    .subcontain1 .sub{
+        margin: 0 0.9375em;
+        padding: 0;
+    }
+    /* =======Awards======== */
+    .subcontain2{
+        padding: 3.125em 0;
+    }
+    .subcontain2 .sub1{
+        margin: 0 0.9375em;
+        padding: 0;
+    }
+    .subcontain2 .sub1 .subcontent2 img{
+        padding-bottom: .5em;
+        width: 40%;
+    }
+    /* ======footer====== */
+    footer .subcontain4 ul{
+        flex-direction: column;
+    }
+    footer .subcontain4 ul li{
+        margin-top: 0.625em;
+        border-right: none;
+    }
+    footer .subcontain4 .socials div{
+        padding: 0 0.625em;
+    }
+}
+/* =======TABLET SCREEN========= */
+@media (767px < width <= 1023px){
+    /* ======nav bar====== */
+    nav{
+        position: fixed;
+        background: #444141;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    nav .menu{
+        display: flex;
+    }
+    nav .menu .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(12.5px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-12.5px) rotate(-45deg);
+    }
+    .navmenu{
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        gap: .8em;
+        background: #444141;
+        padding: 2em 0 2.0625em;
+        flex-direction: column;
+        transition: .5s ease-in-out;
+    }
+    nav button{
+        position: fixed;
+        top: 1%;
+        left:80%;
+        height: 5vh;
+    }
+    .navmenu.active{
+        left: 0;
+    }
+    /* =======Banner Text======= */
+    header{
+        padding: 8.75em 0em 7.5em;
+    }
+    header .bgtexts{
+        padding: 0;
+    }
+    /* ======article====== */
+    .booking{
+        padding: 5.3125em 0;
+    }
+    .booking article{
+        margin: 0 2em;
+    }
+    .booking article section{
+        flex-direction: column;
+    }
+    /* ======why people choose us====== */
+    .subcontainer{
+        padding: 5.3125em 0;
+    }
+    .subcontainer .subcontain{
+        margin: 0 2em;
+        padding: 0;
+    }
+    .subcontainer .subcontain .content  img{
+        width: 20%;
+    }
+    .subcontainer .subcontain .content .resize{
+        width: 40%;
+    }
+}

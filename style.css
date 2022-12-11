@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .6s ease;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'PT Serif', serif; */
+}
+/* ======nav bar/styling====== */
+header{
+    background: url(./img/pexels-antoni-shkraba-production-8902070.jpg);
+    padding: 7.1875em 0em;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    top: -0.3125em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #71727a;
+    z-index: 1;
+    padding: 1em;
+}
+nav .menu{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+}
+nav .menu .hamburger{
+    display: none;
+    cursor: pointer;
+}
+nav .menu .hamburger .bar{
+    display: block;
+    background: #ffff;
+    width: 35px;
+    height: 3px;
+    margin: 10px auto;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+nav ul{
+    display: flex;
+    gap: 3em;
+    list-style: none;
+    align-items: center;
+}
+nav ul .navlink{
+    color: #ffff;
+    font-size: clamp(.9rem, 8vw, 1.2rem);
+    text-decoration: none;
+}
+nav ul li .navlink:focus{
+    color: #41a451;
+}
+nav ul .navlink:hover{
+    color: #41a451;
+}
+nav button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    font-size: .9rem;
+    padding: 0em 2em;
+    background: #ffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+nav button:hover{
+    color: #ffff;
+    background: #000;
+}
+/* ======banner text/styling====== */
+header .bgtexts{
+    text-align: center;
+    padding: 7.1875em 0;
+    color: #000;
+}
+header .bgtexts h1{
+    font-size: clamp(2rem, 8vw, 5rem);
+    font-family: 'PT Serif', serif;
+}
+header .bgtexts span::after{
+    content: '';
+    display: inline-block;
+    width: 10%;
+    height: 4px;
+    margin: 1.880em 0em;
+    background: #000;
+    border-radius: 5px;
+}
+header .bgtexts p{
+    font-size: clamp(1.200rem, 8vw, 1.125rem);
+}
+/* ======booking box/styling====== */
+.booking{
+    background:#f5f5f5;
+    padding-bottom: 7.1875em;
+}
+form section{
+    position: relative;
+    top: -7em;
+}
+form section ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 7em;
+    padding:4.125em 2.5em;
+    background: #ffff;
+    list-style: none;
+    border-radius: 12px;
+}
+form section ul .un{
+    height: 5em;
+    padding: 0 1.875em 0 0;
+    border-right: 1px solid #d7d6d6;
+}
+form section ul .un input:focus{
+    border-bottom: 1px solid #000;
+}
+form section ul li h4{
+    font-size: 0.9375rem;
+    font-weight: lighter;
+    line-height: 1.5625em;
+}
+form section ul li input{
+    width: 110%;
+    color: #000;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    margin-top: 1em;
+    padding: 0.375em 0;
+    outline: none;
+    border: none;
+    transition: .5s ease-in-out;
+}
+form section ul li input:hover{
+    border-bottom: 1px solid #000;
+}
+.date{
+    display: flex;
+}
+form section ul li select{
+    background: #ffff;
+    margin-top: 1em;
+    padding: 0.625em 2.7em 0.625em 0;
+    border: none;
+}
+select option{
+    color: #f5f5f5;
+    background: #000;
+}
+form section ul li .seats{
+    display: flex;
+    gap: 2em;
+}
+form section ul li button{
+    color: #ffff;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    background: #323232;
+    padding:1.125em 1.25em ;
+    border: none;
+    transition: .5s ease-in-out;
+}
+form section ul li button:hover{
+    background: #34c74a;
+}
+/* ======about us/styling====== */
+article section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+article section h3{
+    font-size: clamp(1.75rem, 8vw, 2.8125rem);
+    font-family: 'PT Serif', serif;
+}
+article section p{
+    font-weight: lighter;
+    font-size: clamp(0.9375rem, 5vw, 0.9375rem);
+    margin-top: 1.875em;
+}
+article section .pa{
+    margin-top: 0.9375em;
+}
+article section .sign{
+    margin-top: 1.875em;
+}
+/* ======featured offers/styling====== */
+main{
+    padding: 115px 0;
+}
+main .subcontain{
+    margin: 0 7em;
+}
+main .fotext{
+    text-align: center;
+}
+main .fotext h3{
+    font-size: clamp(1.75rem, 8vw, 2.8125rem);
+    font-family: 'PT Serif', serif;
+}
+main .fotext p{
+    margin-top: 1.875em;
+    font-weight: lighter;
+    font-size: clamp(.200rem, 8vw, 0.9375rem);
+}
+main .subcontain1{
+    display: flex;
+    gap: 1.5em;
+    padding-top: 3.875em;
+    text-align: center;
+}
+main .subcontain1 .btn{
+    position: relative;
+    top: -8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .subcontain1 button{
+    position: relative;
+    height: 7vh;
+    font-size: .9rem;
+    padding: 0em 2em;
+    background: #34c74a;
+    color: #ffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 3;
+    transform: translateY(30px);
+    transition: all .5s ease-in-out;
+}
+main .subcontain1:hover button{
+    opacity: 1;
+    transform: translateY(0px);
+}
+main .subcontain1 .texts{
+    position: relative;
+    top: -1.5625em;
+}
+main .subcontain1 .texts h5{
+    font-size: 26px;
+    font-family: 'PT Serif', serif;
+    font-weight: 300;
+    transition: .5s ease-in;
+}
+main .subcontain1 .texts h5:hover{
+    color: #34c74a;
+}
+main .subcontain1 .texts p{
+    color: #34c74a;
+    margin-top: 0.625em;
+}
+/* ======resturant menu/styling====== */
+.subcontain2{
+    background: #d7d6d6;
+    padding: 7.1875em;
+}
+.subcontain2 .sub{
+    align-items: center;
+    margin: 0em auto;
+    padding: 0 0.9375em;
+}
+.subcontain2 .sub div h2{
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    font-size: clamp(1.65rem, 8vw, 2.8125rem);
+    line-height: 3.375em;
+}
+.subcontain2 .contents ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background: #000;
+    padding: 1.25em 1.875em;
+    gap: 3em;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.subcontain2 .contents ul li{
+    padding: 2.1875em 1.5625em;
+}
+.subcontain2 .contents ul li a{
+    color: #848484;
+    text-decoration: none;
+    font-size: clamp(0.9375rem, 4vw, 1.125rem);
+    font-weight: bold;
+}
+.subcontain2 .contents ul li a:focus{
+    color: #ffff;
+}
+.subcontain2 .sub .contents1 {
+    padding: 3.4375em 1.875em ;
+    background: #ffff;
+    display: flex;
+    overflow: hidden;
+}
+.subcontain2 .sub .contents1 .subcontent:nth-child(2){
+    display: none;
+}
+.subcontain2 .sub .contents1 .subcontent:nth-child(3){
+    display: none;
+}
+
+.subcontain2 .sub .contents1 .subcontent{
+    margin: 0em 4.1875em;
+}
+.subcontain2 .sub .contents1 .subcontent div{
+    margin-bottom: 2.5em;
+}
+.subcontain2 .sub .contents1 .subcontent div p{
+    font-weight: 200;
+    font-size: clamp(0.9375rem, 4vw, 1.125rem);
+}
+.subcontain2 .sub .contents1 .subcontent div .pcolor{
+    color: #34c74a;
+}
+.subcontain2 .sub .contents1 .subcontent div h4{
+    font-weight: lighter;
+    font-family: 'PT Serif', serif;
+    font-size: clamp(1.35rem, 8vw, 1.625rem);
+    line-height: 2.25em;
+    margin-top: 0.9375em;
+}.subcontain2 .sub .contents1 .subcontent div h4:hover{
+    color: #41a451;
+}
+/* ======grid img/styling====== */
+.gimg {
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 50%;
+ }
+ #item-0 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+ }
+ #item-1 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 5;
+ }
+ #item-2 {
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-row-end: 3;
+    grid-column-end: 7;
+ }
+ #item-3 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 4;
+ }
+ #item-4 {
+    grid-row-start: 3;
+    grid-column-start: 4;
+    grid-row-end: 5;
+    grid-column-end: 7;
+ }
+/* ----------recent news--------- */
+.subcontain3{
+    padding:7.1875em 0;
+}
+.subcontain3 .sub1{
+    margin:0 7.1875em ;
+    padding: 0 0.9375em;
+}
+.subcontain3 .sub1 .retext h4{
+    text-align: center;
+    font-size: clamp(1.75rem, 4vw, 2.8125rem) ;
+    line-height: 3.375em;
+    font-family: 'PT Serif', serif;
+}
+.subcontain3 .sub1 .subcontent1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subcontain3 .sub1 .subcontent1 div{
+    padding: 2.1875em 0;
+    padding-right: 2em;
+}
+.subcontain3 .sub1 .subcontent1 div span{
+    padding:0.25em 0.625em ;
+    background: #323232;
+}
+.subcontain3 .sub1 .subcontent1 div span a{
+    font-size: 0.9375rem;
+    font-weight: bold;
+    color: #ffff;
+}
+.subcontain3 .sub1 .subcontent1 div span:hover{
+    background: #34c74a;
+}
+.subcontain3 .sub1 .subcontent1 div h3{
+    margin: 0.9375em 0;
+}
+.subcontain3 .sub1 .subcontent1 div h3 a{
+    font-size: clamp(.9rem, 8vw, 1.625rem);
+    font-family: 'PT Serif', serif;
+    font-weight: lighter;
+    color: #323232;
+    line-height: 1.3em;
+}
+.subcontain3 .sub1 .subcontent1 div h3 a:hover{
+    color: #34c74a;
+}
+.subcontain3 .sub1 .subcontent1 div p{
+    font-size: 0.9375rem;
+    font-weight: lighter;
+    line-height: 1.5625em;
+}
+.subcontain3 .sub1 .subcontent1 div h5{
+    margin-top: 1.875em;
+    font-size: 1.125rem;
+    font-weight: 200;
+}
+.subcontain3 .sub1 .subcontent1 div h5  :hover{
+    color: #34c74a;
+}
+/* =========footer/styling========== */
+footer{
+    padding: 7.5em 0 6.875em;
+    background: #323232;
+}
+footer .subcontain4{
+    padding: 0 0.9375em;
+    margin:0 7.1875em ;
+}
+footer .subcontain4 .flogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .subcontain4 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 3.875em 0 ;
+}
+footer .subcontain4 ul li{
+    padding: 0 1.25em;
+    border-right: 1px solid #f5f5f5;
+}
+footer .subcontain4 ul>:nth-child(5){
+    border: none;
+}
+footer .subcontain4 ul li a{
+    color: #ffff;
+    font-weight: lighter;
+}
+footer .subcontain4 .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .subcontain4 .socials div{
+    padding: 0 1.125em;
+}
+footer .subcontain4 .socials div a{
+    color: #ffff;
+    font-size: 1.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .subcontain4 .socials div i{
+    padding: .625em;
+    border-radius: 50em;
+    background: #3C3C3C;
+}
+footer .subcontain4 .socials div i:hover{
+    background: #34c74a;
+}
+footer .subcontain4 .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    font-size: 0.875rem;
+    font-weight: lighter;
+    margin-top: 6.25em;
+}
+/* ======screen changes====== */
+@media (width <= 767px){
+    /* ======nav bar====== */
+    nav{
+        position: fixed;
+        background: #444141;
+        flex-direction: column;
+    }
+    nav .menu{
+        display: flex;
+    }
+    nav .menu .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(12.5px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-12.5px) rotate(-45deg);
+    }
+    .navmenu{
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        gap: .8em;
+        background: #444141;
+        padding: 2em 0 2.0625em;
+        flex-direction: column;
+        transition: .5s ease-in-out;
+    }
+    nav button{
+        position: fixed;
+        top: 1%;
+        left: 64%;
+        padding: 0em 1.5em;
+    }
+    .navmenu.active{
+        left: 0;
+    }
+    /* ======img banner====== */
+    header .bgtexts{
+        padding: 2.5em 0 5em;
+    }
+    header .bgtexts h1{
+        margin-top: 2em;
+    }
+    header .bgtexts span::after{
+        width: 15%;
+    }
+    /* ======booking box====== */
+    form section ul{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        padding:1.25em 0.9375em;
+        margin: 0 1em;
+    }
+    form section ul li input{
+        width: 120%;
+    }
+    form section ul span{
+        width: 100%;
+        padding-top: 1em;
+        border-bottom: 1px solid #000;
+    }
+    form section ul .un{
+        padding: 1.875em 0;
+        border-right: none;
+        border-bottom: ipx solig black;
+    }
+    form section ul li .seats{
+        flex-direction: column;
+        gap: 2em;
+    }
+    /* ======about us====== */
+    article section{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0.9375em;
+    }
+    article section .chef{
+        width: 100%;
+        margin-bottom: 3.125em;
+    }
+    /* ======featured offers====== */
+    main .subcontain{
+        margin: 0 0.9375em;
+    }
+    main{
+        padding: 3.125em 0;
+    }
+    main .subcontain1{
+        flex-direction: column;
+        gap: 1.25em;
+    }
+    main .subcontain1 img{
+        width: 98%;
+    }
+    /* ======resturant menu====== */
+    .subcontain2{
+        padding: 3.125em 0;
+    }
+    .subcontain2 .sub{
+        padding: 0 0.9375em;
+    }
+    .subcontain2 .contents ul{
+        flex-direction: column;
+        gap: .3em;
+        padding: 2.5em 1.875em;
+    }
+    .subcontain2 .contents ul li{
+        padding: 0.9375em 1.5625em;
+    }
+    .subcontain2 .sub .contents1 {
+        padding: 2.5em 1.25em ;
+    }
+    .subcontain2 .sub .contents1 .subcontent{
+        margin: 0em;
+    }
+    /* ======grid image====== */
+    .gimg {
+        display: block;
+    }
+    .gimg img{
+        width: 100%;
+    }
+    /* =======recent news======== */
+    .subcontain3{
+        padding: 3.125em 0;
+    }
+    .subcontain3 .sub1{
+        margin:0 0.9375em ;
+        padding: 0 0.9375em;
+    }
+    .subcontain3 .sub1 .subcontent1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ======footer====== */
+    footer .subcontain4 ul{
+        flex-direction: column;
+    }
+    footer .subcontain4 ul li{
+        margin-top: 0.625em;
+        border-right: none;
+    }
+    footer .subcontain4 .socials div{
+        padding: 0 0.625em;
+    }
+}
+/* =======TABLET SCREEN========= */
+@media (767px < width <= 1023px){
+    /* ======nav bar====== */
+    nav{
+        position: fixed;
+        background: #444141;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    nav .menu{
+        display: flex;
+    }
+    nav .menu .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(12.5px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-12.5px) rotate(-45deg);
+    }
+    .navmenu{
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        gap: .8em;
+        background: #444141;
+        padding: 2em 0 2.0625em;
+        flex-direction: column;
+        transition: .5s ease-in-out;
+    }
+    nav button{
+        position: fixed;
+        top: 1%;
+        left:80%;
+        height: 5vh;
+    }
+    .navmenu.active{
+        left: 0;
+    }
+    /* ======booking box====== */
+    form section ul{
+        margin: 0 2em;
+        gap: .5em;
+    }
+    form section ul li button{
+        display: block;
+    }
+    /* ======about us====== */
+    article section{
+        flex-direction: column;
+        align-items: baseline;
+        margin: 0 2em;
+    }
+    article section .chef{
+        margin-bottom: 3.125em;
+    }
+    /* ======feature offers====== */
+
+    main .subcontain{
+        margin: 0 1em;
+    }
+    main{
+        padding: 3.125em 0;
+    }
+    main .subcontain1 img{
+        width: 95%;
+    }
+    /* ======resturant menu====== */
+    .subcontain2{
+        padding: 5.3125em 0;
+    }
+    .subcontain2 .sub{
+        padding: 0 1.9375em;
+    }
+    .subcontain2 .sub .contents1 .subcontent{
+        margin: 0em;
+    }
+    /* ======grid img=======*/
+    .gimg {
+        display: block;
+    }
+    .gimg img{
+        width: 100%;
+    }
+    /* =======recent news======== */
+    .subcontain3{
+        padding: 5.3125em 0;
+    }
+    .subcontain3 .sub1{
+        margin:0 2.9375em ;
+    }
+    .subcontain3 .sub1 .subcontent1>:nth-child(3){
+        display: none;
+    }
+}
