@@ -235,6 +235,7 @@ footer .subcontain4 .copyright{
   }
   nav .menu{
       display: flex;
+      justify-content: space-between;
   }
   nav .menu .hamburger{
       display: block;
@@ -264,6 +265,7 @@ footer .subcontain4 .copyright{
       top: 1%;
       left: 61%;
       padding: 0em 1.5em;
+      display: none;
   }
   .navmenu.active{
       left: 0;
@@ -326,7 +328,6 @@ footer .subcontain4 .socials div{
   }
   nav .menu{
       display: flex;
-      justify-content: space-between;
   }
   nav .menu .hamburger{
       display: block;
@@ -356,7 +357,6 @@ footer .subcontain4 .socials div{
       top: 1%;
       left:80%;
       height: 5vh;
-      display: none;
   }
   .navmenu.active{
       left: 0;
