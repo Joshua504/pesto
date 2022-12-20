@@ -11,7 +11,6 @@ a{
 body{
     font-family: 'Poppins', sans-serif;
     /* font-family: 'PT Serif', serif; */
-    width: 100%;
 }
 
 header{
@@ -324,10 +323,10 @@ footer .subcontain4 .socials div{
       position: fixed;
       background: #444141;
       flex-direction: column;
-      /* width: 100%; */
   }
   nav .menu{
       display: flex;
+      justify-content: space-between;
   }
   nav .menu .hamburger{
       display: block;
@@ -357,6 +356,7 @@ footer .subcontain4 .socials div{
       top: 1%;
       left:80%;
       height: 5vh;
+      display: none;
   }
   .navmenu.active{
       left: 0;
